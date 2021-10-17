@@ -1,13 +1,8 @@
-/* *, *::before, *::after {
-  box-sizing: inherit;
-} */
-
 body {
   margin: 0;
   font-family: Georgia, serif;
   font-style: normal;
-  font-size: 20px;
-  line-height: 26px;
+  line-height: 1.5rem;
   color: #000000;
   background-color: #cac456;
 }
@@ -41,52 +36,120 @@ body {
 
 #r1:checked ~ .sl1 {
   margin-left: 0;
+  transition: 0.6s;
 }
 
 #r2:checked ~ .sl1 {
   margin-left: -25%;
+  transition: 0.6s;
 }
 
 #r3:checked ~ .sl1 {
   margin-left: -50%;
+  transition: 0.6s;
 }
 
 #r4:checked ~ .sl1 {
   margin-left: -75%;
+  transition: 0.6s;
 }
 
 .slider-text {
   font-size: 1.5rem;
+  font-weight: 600;
 }
 
 .slider-pagination {
   display: flex;
+  margin-top: 1rem;
 }
 
 .control {
-  width: 1rem;
-  height: 1rem;
-  margin: 0.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 2.5rem;
+  height: 2.5rem;
   cursor: pointer;
-  border: #333333 0.2rem solid;
-  background-color: #333333;
-  border-radius: 50%;
   transition: 0.6s;
 }
 
-.control:hover {
+.control span {
+  width: 1rem;
+  height: 1rem;
+  border: #333333 0.2rem solid;
+  background-color: #333333;
+  border-radius: 50%;
+}
+
+.control:hover span{
   background-color: #ffffff;
   border: #ffffff 0.2rem solid;
   transition: 0.6s;
 }
 
-.control:active {
+.control:active span{
   border: #ffffff 0.2rem solid;
   background-color: none;
   transition: 0.6s;
 }
 
+/* #r1:checked ~ .slider-pagination .control:nth-child(1) span {
+  background-color: none;
+  border: #ffffff 0.2rem solid;
+  transition: 0.6s;
+}
+
+#r2:checked ~ .slider-pagination > #label2 span {
+  border: #ffffff 0.2rem solid;
+  background-color: red;
+  transition: 0.6s;
+}
+
+#r3:checked ~ .slider-pagination > #label3 {
+  border: #ffffff 0.2rem solid;
+  background-color: red;
+  transition: 0.6s;
+}
+
+#r4:checked ~ .slider-pagination > #label4 {
+  border: #ffffff 0.2rem solid;
+  background-color: red;
+  transition: 0.6s;
+} */
+
 input[name="r"] {
   display: none;
 }
 
+.description {
+  display: flex;
+  justify-content: space-between;
+  width: 40rem;
+  height: 6rem;
+}
+
+.slider-text {
+  overflow: hidden;
+  width: 90rem;
+}
+
+.text {
+  display: flex;
+  width: 90rem;
+}
+
+#r2:checked ~ .slider .description .slider-text .text .text1{
+  margin-left: -14em;
+  transition: ease-in-out 1s;
+}
+
+#r3:checked ~ .slider .description .slider-text .text .text1{
+  margin-left: -28em;
+  transition: ease-in-out 1s;
+}
+
+#r4:checked ~ .slider .description .slider-text .text .text1{
+  margin-left: -42em;
+  transition: ease-in-out 1s;
+}
