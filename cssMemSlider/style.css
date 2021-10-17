@@ -94,30 +94,6 @@ body {
   transition: 0.6s;
 }
 
-/* #r1:checked ~ .slider-pagination .control:nth-child(1) span {
-  background-color: none;
-  border: #ffffff 0.2rem solid;
-  transition: 0.6s;
-}
-
-#r2:checked ~ .slider-pagination > #label2 span {
-  border: #ffffff 0.2rem solid;
-  background-color: red;
-  transition: 0.6s;
-}
-
-#r3:checked ~ .slider-pagination > #label3 {
-  border: #ffffff 0.2rem solid;
-  background-color: red;
-  transition: 0.6s;
-}
-
-#r4:checked ~ .slider-pagination > #label4 {
-  border: #ffffff 0.2rem solid;
-  background-color: red;
-  transition: 0.6s;
-} */
-
 input[name="r"] {
   display: none;
 }
