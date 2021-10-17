@@ -11,3 +11,19 @@ body {
   color: #000000;
   background-color: #e7e5ba;
 }
+
+.slider {
+  margin: 0 auto;
+  overflow: hidden;
+  max-width: 40rem;
+  margin-top: 3rem;
+}
+
+.slides {
+  border: #585858 5px solid;
+  border-radius: 1rem;
+}
+
+.slider-text {
+  font-size: 2rem;
+}
