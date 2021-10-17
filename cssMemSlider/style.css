@@ -116,16 +116,16 @@ input[name="r"] {
 }
 
 #r2:checked ~ .slider .description .slider-text .text .text1{
-  margin-left: -14em;
-  transition: ease-in-out 1s;
+  margin-left: -20em;
+  transition: ease-in-out 0.5s;
 }
 
 #r3:checked ~ .slider .description .slider-text .text .text1{
-  margin-left: -28em;
-  transition: ease-in-out 1s;
+  margin-left: -40em;
+  transition: ease-in-out 0.5s;
 }
 
 #r4:checked ~ .slider .description .slider-text .text .text1{
-  margin-left: -42em;
-  transition: ease-in-out 1s;
+  margin-left: -60em;
+  transition: ease-in-out 0.5s;
 }
