@@ -4,7 +4,7 @@ body {
   font-style: normal;
   line-height: 1.5rem;
   color: #000000;
-  background-color: #cac456;
+  background-color: #d1d9b9;
 }
 
 .slider {
@@ -15,6 +15,7 @@ body {
 
 .slider .wrapper {
   border: #2e2e2e 0.3rem solid;
+  background-color: #2e2e2e;
   border-radius: 1rem;
   overflow: hidden;
 }
@@ -22,7 +23,7 @@ body {
 .slides {
   display: flex;
   width: 400%;
-  height: 33.75rem;
+  height: 32rem;
 }
 
 .slide {
@@ -34,28 +35,28 @@ body {
   height: 100%;
 }
 
-#r1:checked ~ .sl1 {
+#r1:checked ~ .wrapper .slides .sl1 {
   margin-left: 0;
   transition: 0.6s;
 }
 
-#r2:checked ~ .sl1 {
+#r2:checked ~ .wrapper .slides .sl1 {
   margin-left: -25%;
   transition: 0.6s;
 }
 
-#r3:checked ~ .sl1 {
+#r3:checked ~ .wrapper .slides .sl1 {
   margin-left: -50%;
   transition: 0.6s;
 }
 
-#r4:checked ~ .sl1 {
+#r4:checked ~ .wrapper .slides .sl1 {
   margin-left: -75%;
   transition: 0.6s;
 }
 
 .slider-text {
-  font-size: 1.5rem;
+  font-size: 1.2rem;
   font-weight: 600;
 }
 
@@ -94,38 +95,65 @@ body {
   transition: 0.6s;
 }
 
+#r1:checked ~ .description .slider-pagination .control:nth-of-type(1) .point {
+  background-color: #ffffff;
+  border: #333333 0.2rem solid;
+}
+
+#r2:checked ~ .description .slider-pagination .control:nth-of-type(2) .point {
+  background-color: #ffffff;
+  border: #333333 0.2rem solid;
+}
+
+#r3:checked ~ .description .slider-pagination .control:nth-of-type(3) .point {
+  background-color: #ffffff;
+  border: #333333 0.2rem solid;
+}
+
+#r4:checked ~ .description .slider-pagination .control:nth-of-type(4) .point {
+  background-color: #ffffff;
+  border: #333333 0.2rem solid;
+}
+
 input[name="r"] {
   display: none;
 }
 
 .description {
   display: flex;
-  justify-content: space-between;
-  width: 40rem;
+  justify-content: space-between; 
   height: 6rem;
 }
 
 .slider-text {
   overflow: hidden;
-  width: 90rem;
 }
 
 .text {
   display: flex;
-  width: 90rem;
+  width: 400%;
 }
 
-#r2:checked ~ .slider .description .slider-text .text .text1{
-  margin-left: -20em;
-  transition: ease-in-out 0.5s;
+.slide-text {
+  width: 25%;
 }
 
-#r3:checked ~ .slider .description .slider-text .text .text1{
-  margin-left: -40em;
-  transition: ease-in-out 0.5s;
+#r1:checked ~ .description .slider-text .text .tx1{
+  margin-left: 0;
+  transition: 0.6s;
 }
 
-#r4:checked ~ .slider .description .slider-text .text .text1{
-  margin-left: -60em;
-  transition: ease-in-out 0.5s;
+#r2:checked ~ .description .slider-text .text .tx1{
+  margin-left: -25%;
+  transition: 0.6s;
+}
+
+#r3:checked ~ .description .slider-text .text .tx1{
+  margin-left: -50%;
+  transition: 0.6s;
+}
+
+#r4:checked ~ .description .slider-text .text .tx1{
+  margin-left: -75%;
+  transition: 0.6s; 
 }
