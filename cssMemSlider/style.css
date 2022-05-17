@@ -96,9 +96,8 @@ body {
 }
 
 .control:active span{
-  border: #ffffff 0.2rem solid;
-  background-color: none;
-  transition: 0.6s;
+  background-color: #333333;
+  border: #d1d9b9 0.2rem solid;
 }
 
 #r1:checked ~ .description .slider-pagination .control:nth-of-type(1) .point {
@@ -120,6 +119,41 @@ body {
   background-color: #ffffff;
   border: #333333 0.2rem solid;
 }
+
+#r1:checked:hover ~ .description .slider-pagination .control:nth-of-type(1) .point {
+  background-color: #333333;
+  border: #ffffff 0.2rem solid;
+}
+#r2:checked:hover ~ .description .slider-pagination .control:nth-of-type(2) .point {
+  background-color: #333333;
+  border: #ffffff 0.2rem solid;
+}
+#r3:checked:hover ~ .description .slider-pagination .control:nth-of-type(3) .point {
+  background-color: #333333;
+  border: #ffffff 0.2rem solid;
+}
+#r4:checked:hover ~ .description .slider-pagination .control:nth-of-type(4) .point {
+  background-color: #333333;
+  border: #ffffff 0.2rem solid;
+}
+
+#r1:checked:active ~ .description .slider-pagination .control:nth-of-type(1) .point {
+  background-color: #333333;
+  border: #d1d9b9 0.2rem solid;
+}
+#r2:checked:active ~ .description .slider-pagination .control:nth-of-type(2) .point {
+  background-color: #333333;
+  border: #d1d9b9 0.2rem solid;
+}
+#r3:checked:active ~ .description .slider-pagination .control:nth-of-type(3) .point {
+  background-color: #333333;
+  border: #d1d9b9 0.2rem solid;
+}
+#r4:checked:active ~ .description .slider-pagination .control:nth-of-type(4) .point {
+  background-color: #333333;
+  border: #d1d9b9 0.2rem solid;
+}
+
 
 input[name="r"] {
   display: none;
