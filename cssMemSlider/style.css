@@ -1,0 +1,218 @@
+body {
+  margin: 0;
+  font-family: Georgia, serif;
+  font-style: normal;
+  line-height: 1.5rem;
+  color: #000000;
+  background-color: #d1d9b9;
+}
+
+.container {
+  margin: 0 10px;
+}
+
+.slider {
+  margin: 0 auto;
+  max-width: 40rem;
+  margin-top: 2rem;
+}
+
+.slider .wrapper {
+  border: #2e2e2e 0.3rem solid;
+  background-color: #2e2e2e;
+  border-radius: 1rem;
+  overflow: hidden;
+}
+
+.slides {
+  display: flex;
+  width: 400%;
+  /* height: 32rem; */
+}
+
+.slide {
+  width: 25%;
+}
+
+.slide img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+#r1:checked ~ .wrapper .slides .sl1 {
+  margin-left: 0;
+  transition: 0.6s;
+}
+
+#r2:checked ~ .wrapper .slides .sl1 {
+  margin-left: -25%;
+  transition: 0.6s;
+}
+
+#r3:checked ~ .wrapper .slides .sl1 {
+  margin-left: -50%;
+  transition: 0.6s;
+}
+
+#r4:checked ~ .wrapper .slides .sl1 {
+  margin-left: -75%;
+  transition: 0.6s;
+}
+
+.slider-text {
+  /* font-size: 1.2rem; */
+  font-size: calc(1rem + 0.2vw);
+  font-weight: 600;
+}
+
+.slider-pagination {
+  display: flex;
+  margin-top: 1rem;
+}
+
+.control {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 2.5rem;
+  height: 2.5rem;
+  cursor: pointer;
+  transition: 0.6s;
+}
+
+.control span {
+  width: 1rem;
+  height: 1rem;
+  border: #333333 0.2rem solid;
+  background-color: #333333;
+  border-radius: 50%;
+}
+
+.control:hover span{
+  background-color: #ffffff;
+  border: #ffffff 0.2rem solid;
+  transition: 0.6s;
+}
+
+.control:active span{
+  background-color: #333333;
+  border: #d1d9b9 0.2rem solid;
+}
+
+#r1:checked ~ .description .slider-pagination .control:nth-of-type(1) .point {
+  background-color: #ffffff;
+  border: #333333 0.2rem solid;
+}
+
+#r2:checked ~ .description .slider-pagination .control:nth-of-type(2) .point {
+  background-color: #ffffff;
+  border: #333333 0.2rem solid;
+}
+
+#r3:checked ~ .description .slider-pagination .control:nth-of-type(3) .point {
+  background-color: #ffffff;
+  border: #333333 0.2rem solid;
+}
+
+#r4:checked ~ .description .slider-pagination .control:nth-of-type(4) .point {
+  background-color: #ffffff;
+  border: #333333 0.2rem solid;
+}
+
+#r1:checked:hover ~ .description .slider-pagination .control:nth-of-type(1) .point {
+  background-color: #333333;
+  border: #ffffff 0.2rem solid;
+}
+#r2:checked:hover ~ .description .slider-pagination .control:nth-of-type(2) .point {
+  background-color: #333333;
+  border: #ffffff 0.2rem solid;
+}
+#r3:checked:hover ~ .description .slider-pagination .control:nth-of-type(3) .point {
+  background-color: #333333;
+  border: #ffffff 0.2rem solid;
+}
+#r4:checked:hover ~ .description .slider-pagination .control:nth-of-type(4) .point {
+  background-color: #333333;
+  border: #ffffff 0.2rem solid;
+}
+
+#r1:checked:active ~ .description .slider-pagination .control:nth-of-type(1) .point {
+  background-color: #333333;
+  border: #d1d9b9 0.2rem solid;
+}
+#r2:checked:active ~ .description .slider-pagination .control:nth-of-type(2) .point {
+  background-color: #333333;
+  border: #d1d9b9 0.2rem solid;
+}
+#r3:checked:active ~ .description .slider-pagination .control:nth-of-type(3) .point {
+  background-color: #333333;
+  border: #d1d9b9 0.2rem solid;
+}
+#r4:checked:active ~ .description .slider-pagination .control:nth-of-type(4) .point {
+  background-color: #333333;
+  border: #d1d9b9 0.2rem solid;
+}
+
+
+input[name="r"] {
+  display: none;
+}
+
+.description {
+  display: flex;
+  justify-content: space-between; 
+  height: 6rem;
+}
+
+.slider-text {
+  overflow: hidden;
+}
+
+.text {
+  display: flex;
+  width: 400%;
+  margin-top: 7px;
+}
+
+.slide-text {
+  width: 25%;
+}
+
+#r1:checked ~ .description .slider-text .text .tx1{
+  margin-left: 0;
+  transition: 0.6s;
+}
+
+#r2:checked ~ .description .slider-text .text .tx1{
+  margin-left: -25%;
+  transition: 0.6s;
+}
+
+#r3:checked ~ .description .slider-text .text .tx1{
+  margin-left: -50%;
+  transition: 0.6s;
+}
+
+#r4:checked ~ .description .slider-text .text .tx1{
+  margin-left: -75%;
+  transition: 0.6s; 
+}
+
+@media (max-width: 768px) {
+  .description {
+    flex-direction: column;
+    align-items: center;
+    justify-content: normal;
+    height: 8rem;
+}
+
+  .slider-pagination {
+    order: -1;
+  }
+
+  .text {
+    margin-top: 0;
+  }
+}
+
